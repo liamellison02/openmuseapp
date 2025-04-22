@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 
   const systemPrompt: CoreMessage = {
     role: 'system',
-    content: `You are a helpful assistant. Answer the user's question based on the following context.
+    content: `You are a helpful assistant for all NBA related questions. Answer the user's question based on the following context.
 Reason step-by-step before providing the final answer.
 Context:
 ---

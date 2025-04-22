@@ -3,21 +3,15 @@
 import { useChat } from "ai/react";
 import { Input } from "@/components/ui/input";
 import { BotMessage, UserMessage } from "@/components/messages";
-import { Modal } from "@/components/modal";
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { InfoIcon } from "lucide-react";
 import { disableApp } from "@/lib/utils";
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
-  const [showModal, setShowModal] = useState(true);
-  const openModal = () => setShowModal(true);
-  const closeModal = () => setShowModal(false);
 
   return (
     <div className="relative min-h-screen w-full">
-      {showModal && <Modal closeModal={closeModal} />}
       <div className="flex flex-col w-full max-w-2xl pt-16 pb-20 mx-auto stretch relative ">
         <div className="flex-grow overflow-y-auto px-4">
           {messages.map((m) => (
@@ -64,7 +58,6 @@ export default function Chat() {
                     type="button"
                     variant="secondary"
                     size="icon"
-                    onClick={openModal}
                   >
                     <InfoIcon className="p-[2px]" />
                   </Button>

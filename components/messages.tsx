@@ -1,4 +1,3 @@
-// UserMessage.tsx
 import React from "react";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";

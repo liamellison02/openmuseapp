@@ -9,7 +9,6 @@ export const registry = createProviderRegistry({
   openai: createOpenAI({
     apiKey: process.env.OPENAI_API_KEY,
   }),
-  // Add OpenRouter configuration
   openrouter: createOpenAI({
     baseURL: 'https://openrouter.ai/api/v1',
     apiKey: process.env.OPENROUTER_API_KEY,
