@@ -7,6 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "OpenMuse",
   description: "An open-source AI-powered chatbot built with Next.js and OpenRouter.",
+  icons: {
+    icon: "/assets/favicon.ico",
+    shortcut: "/assets/favicon-16x16.png",
+    apple: "/assets/apple-touch-icon.png",
+  },
+  manifest: "/assets/site.webmanifest",
 };
 
 export default function RootLayout({
