@@ -1,12 +1,7 @@
 # openmuse | [openmuse.app](https://openmuse.app)
 
-A fully-featured Retrieval-Augmented Generation (RAG) chat service for answering NBA or basketball-related questions.
-
-The project couples **Next.js** for the frontend & API layer with **LangChain**, **OpenAI-compatible LLMs**, and **MongoDB Atlas Vector Search** for contextual retrieval.
-
-> Built as a reference implementation of a production-ready RAG architecture using only serverless components.
-
----
+A fully-featured Retrieval-Augmented Generation (RAG) chat service for answering NBA or basketball-related questions. The project couples **Next.js** for the frontend & API layer with **LangChain**, **OpenAI-compatible LLMs**, and **MongoDB Atlas Vector Search** for contextual retrieval. 
+*(Built as a reference implementation of a production-ready RAG architecture using only serverless components.)*
 
 ## Table of Contents
 
@@ -19,8 +14,6 @@ The project couples **Next.js** for the frontend & API layer with **LangChain**,
 7. [Getting Started](#getting-started)
 8. [Extending the Bot](#extending-the-bot)
 
----
-
 ## Features
 
 - **Chat UI** with streaming responses and optimistic rendering
@@ -29,7 +22,6 @@ The project couples **Next.js** for the frontend & API layer with **LangChain**,
 - **Typed React / TypeScript** codebase, Tailwind CSS design system, shadcn/ui primitives
 - **Serverless-first**: all compute is in edge/serverless functions; MongoDB Atlas handles persistence
 
----
 
 ## High-Level Architecture
 
